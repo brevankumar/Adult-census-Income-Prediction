@@ -15,7 +15,6 @@ xgboost
 catboost
 dill
 imbalanced-learn
-mlflow
 dvc
 category_encoders
 pymongo
