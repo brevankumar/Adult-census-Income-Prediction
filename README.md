@@ -47,8 +47,10 @@ docker push testdockerrevan.azurecr.io/adultcensus:latest
 ### Web app deployed through AWS
 
 ```
-http://projectdeploy-env.eba-qagymxj6.us-east-1.elasticbeanstalk.com
-http://projectdeploy-env.eba-qagymxj6.us-east-1.elasticbeanstalk.com/predict
+http://aducen-env.eba-ynifrsmp.us-east-1.elasticbeanstalk.com/
+
+
+http://aducen-env.eba-ynifrsmp.us-east-1.elasticbeanstalk.com/predict
 
 ```
 ```
