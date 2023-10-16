@@ -2,7 +2,7 @@
 
 ### create an environment.
 ```
-conda create -p virtual_env_for_adult_census python==3.10
+conda create -p virtual_env_for_adult_census python==3.8
 
 conda activate virtual_env_for_adult_census/
 ```
