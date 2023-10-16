@@ -3,9 +3,9 @@ import sys
 from dataclasses import dataclass
 
 import numpy as np
-import mlflow
-import mlflow.sklearn
-from mlflow.models import infer_signature
+"""import mlflow
+import mlflow.sklearn"""
+# from mlflow.models import infer_signature
 
 import argparse
 
@@ -109,16 +109,16 @@ class ModelTrainer:
                 obj=best_model
             )
             
-            with mlflow.start_run():
+            # with mlflow.start_run():
 
-                predicted=best_model.predict(X_test)
+            predicted=best_model.predict(X_test)
 
-                Accuracy_score = accuracy_score(y_test, predicted)
-                F1_score       = f1_score (y_test, predicted)
-                Roc_auc_score  = roc_auc_score(y_test, predicted)
-        
+            Accuracy_score = accuracy_score(y_test, predicted)
+            F1_score       = f1_score (y_test, predicted)
+            Roc_auc_score  = roc_auc_score(y_test, predicted)
+    
 
-                mlflow.log_metric("accuracy",Accuracy_score)
+            """mlflow.log_metric("accuracy",Accuracy_score)
                 mlflow.log_metric("roc_auc_score",Roc_auc_score)
                 mlflow.log_metric("F1_score",F1_score)
                 mlflow.log_param("n_estimators",150)
@@ -126,7 +126,7 @@ class ModelTrainer:
                # mlflow.log_param("criterion",'gini')
                # mlflow.log_param("min_samples_split", 5)
                # mlflow.log_param("min_samples_leaf",10)
-                
+                """
 
                 
 
