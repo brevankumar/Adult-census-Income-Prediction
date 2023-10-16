@@ -8,8 +8,8 @@ import pickle
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import RandomizedSearchCV
 from sklearn.model_selection import StratifiedKFold
-import mlflow
-import mlflow.sklearn
+"""import mlflow
+import mlflow.sklearn"""
 
 from src.logger import logging
 
