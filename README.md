@@ -44,9 +44,12 @@ docker login testdockerrevan.azurecr.io
 docker push testdockerrevan.azurecr.io/adultcensus:latest
 ```
 
-### Web app deployed through AWS
+### Web app deployed through Azure
 
 ```
+https://newmlproject.azurewebsites.net
+
+https://newmlproject.azurewebsites.net/predict
 
 
 ```
